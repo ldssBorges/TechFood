@@ -1,0 +1,35 @@
+.root {
+  padding: var(--space-2);
+  border: 1px solid var(--white-a10);
+  background-color: var(--white-a10);
+  border-radius: var(--radius-3);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.root.selected {
+  border-color: var(--accent-10) !important;
+  background-color: var(--accent-10) !important;
+}
+
+.root:hover {
+  border-color: var(--accent-10);
+}
+
+.image-container {
+  background-color: var(--color-background);
+  border: 1px solid var(--gray-5);
+  padding: var(--space-4);
+  border-radius: var(--radius-3);
+}
+
+.image-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.root p {
+  font-size: 12px;
+  padding: var(--space-2) 0 var(--space-1);
+}

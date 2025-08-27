@@ -1,0 +1,68 @@
+{
+  "startPage": {
+    "documentNumber": "Document number",
+    "register": "Register",
+    "dontIdentify": "Don't identify",
+    "invalidDocument": "Invalid document number!",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "menuPage": {
+    "choose": "Choose",
+    "order": "Order",
+    "menu": "Menu",
+    "category": "Category",
+    "sortBy": "Sort by",
+    "sort": {
+      "name": "Name",
+      "price": "Price",
+      "popular": "Popular"
+    },
+    "search": "Search for products",
+    "myOrder": "My Order",
+    "payment": "Payment",
+    "addToCart": "Add to cart",
+    "thankYou": "Thank you"
+  },
+  "checkoutPage": {
+    "title": "How would you like to pay?",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal",
+    "taxes": "Taxes",
+    "discount": "Discount",
+    "pay": "Pay",
+    "cancel": "Cancel payment",
+    "mercadoPago": "Mercado Pago",
+    "mercadoPagoInstructions": "Use your Mercado Pago account to pay.",
+    "pix": "Pix",
+    "pixInstructions": "Use your wallet to scan the QR code and pay with Pix.",
+    "creditCard": "Credit Card",
+    "creditCardInstructions": "Enter your credit card details to complete the payment."
+  },
+  "confirmationPage": {
+    "title": "Thank you for your order!",
+    "subtitle": "We're preparing your order, please take your receipt.",
+    "yourOrder": "Your Order",
+    "orderNumber": "No."
+  },
+  "labels": {
+    "currency": "$",
+    "name": "Name",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "remove": "Remove",
+    "add": "Add",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "customize": "Customize",
+    "apply": "Apply",
+    "done": "Done",
+    "ok": "OK",
+    "close": "Close"
+  }
+}

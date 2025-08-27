@@ -1,0 +1,74 @@
+.root {
+  width: 280px;
+  padding: var(--space-4);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--radius-3);
+  transition: border-color 0.3s ease;
+}
+
+.info {
+  margin-left: var(--space-2);
+}
+
+.price strong {
+  color: var(--amber-10);
+}
+
+.edit-icon {
+  color: var(--sand-1);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.edit {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-5);
+  background-color: var(--amber-10);
+  transition: transform 0.2s ease;
+}
+
+.edit:hover {
+  transform: scale(1.1);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.image-container img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: var(--radius-3);
+}
+
+.delete {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-5);
+  background-color: var(--red-10);
+  transition: transform 0.2s ease;
+}
+
+.delete:hover {
+  transform: scale(1.1);
+}
+
+.delete-icon {
+  color: var(--sand-1);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

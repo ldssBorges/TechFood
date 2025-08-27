@@ -1,0 +1,44 @@
+.root {
+  height: 100vh;
+  background-color: var(--gray-a2);
+}
+
+.left {
+  padding: var(--space-5) var(--space-5) 0;
+}
+
+.right {
+  width: 200px;
+  background-color: var(--white-a10);
+  padding: var(--space-4) 0;
+}
+
+.right-header {
+  padding: 0 var(--space-4) var(--space-2);
+}
+
+.right-content {
+  border-top: 1px solid var(--gray-a4);
+  border-bottom: 1px solid var(--gray-a4);
+}
+
+.right-footer {
+  padding: var(--space-2) var(--space-4) 0;
+}
+
+.categories-card {
+  padding-bottom: var(--space-4);
+  min-height: 250px;
+}
+
+.items-card .items {
+  padding: var(--space-1);
+}
+
+.sort {
+  font-weight: bold !important;
+}
+
+.done-button {
+  padding: var(--space-2) !important;
+}

@@ -1,0 +1,29 @@
+.root {
+  width: 130px;
+  height: 140px;
+  padding: var(--space-4);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--radius-3);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.selected {
+  border-color: var(--accent-10);
+}
+
+.not-selected {
+  border-color: var(--gray-2);
+}
+
+.root:hover {
+  border-color: var(--accent-10);
+}
+
+.root img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: var(--radius-3);
+}

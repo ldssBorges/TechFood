@@ -1,0 +1,22 @@
+.root {
+  margin: 0;
+}
+
+.trigger {
+  padding: var(--space-1);
+  margin: 0 !important;
+}
+
+.trigger img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: var(--radius-4);
+}
+
+.option img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: var(--radius-3);
+}

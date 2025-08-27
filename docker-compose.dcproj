@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <DockerPublishLocally>False</DockerPublishLocally>
+    <ProjectGuid>6e8081b6-9d78-4adb-8b83-9ed38be45c47</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
+    <DockerServiceName>techfood.api</DockerServiceName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="docker-compose.yml" />
+    <None Include=".dockerignore" />
+    <None Remove=".eslintrc.json" />
+    <None Remove="package.json" />
+    <None Remove="package-lock.json" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+.root {
+  height: 100vh;
+}
+
+.image {
+  object-fit: contain;
+  max-width: 100%;
+}

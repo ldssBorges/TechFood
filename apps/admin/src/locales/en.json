@@ -1,0 +1,50 @@
+{
+  "menuManagementPage": {
+    "products": "Products",
+    "categories": "Categories",
+    "addProduct": "Add Product",
+    "deleteDialog": {
+      "title": "Delete Product",
+      "message": "Are you sure you want to delete the product {{name}}?",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "editDialog": {
+      "addSuccessMessage": "Product added successfully",
+      "editSuccessMessage": "Product edited successfully",
+      "addErrorMessage": "Failed to add product",
+      "editErrorMessage": "Failed to edit product",
+      "editTitle": "Edit Product",
+      "addTitle": "Add Product",
+      "selectCategory": "Select Category"
+    }
+  },
+  "forbidden": {
+    "title": "You're not permitted to see this.",
+    "message": "The page you're trying to access has restricted access.",
+    "contactMessage": "If you feel this is a mistake, please contact your admin.",
+    "backToHome": "Back to Home"
+  },
+  "fileInput": {
+    "selectImage": "Select Image",
+    "removeImage": "Remove Image",
+    "selectedImage": "Selected Image"
+  },
+  "labels": {
+    "save": "Save",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "name": "Name",
+    "description": "Description",
+    "price": "Price",
+    "category": "Category",
+    "image": "Image"
+  },
+  "errors": {
+    "expiredSession": "Your session has expired. Please log in again.",
+    "unauthorizedAccess": "You do not have permission to access this resource.",
+    "notFound": "The requested resource was not found.",
+    "internalServerError": "An internal server error occurred. Please try again later.",
+    "unexpectedError": "An unexpected error occurred. Please try again later."
+  }
+}

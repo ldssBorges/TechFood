@@ -1,0 +1,11 @@
+.root {
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  flex-grow: 1;
+  padding: var(--space-4);
+}

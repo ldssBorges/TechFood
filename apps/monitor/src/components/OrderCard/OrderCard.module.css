@@ -1,0 +1,27 @@
+.root {
+  height: 100vh;
+  margin: 16px 24px;
+}
+
+h2 {
+  color: var(--mauve-1);
+  padding: 8px 24px;
+}
+
+.preparing {
+  border-radius: 16px;
+  background-color: var(--sage-9);
+}
+
+.done {
+  border-radius: 16px;
+  background-color: var(--red-10);
+}
+
+.container {
+  flex: 1;
+}
+
+.order {
+  padding: 24px;
+}

@@ -1,0 +1,44 @@
+.img {
+  width: 280px;
+  height: 280px;
+  object-fit: fill;
+  border-radius: var(--space-2);
+  transition: all 0.3s ease;
+}
+
+.price {
+  color: var(--amber-10);
+}
+
+.chosingGarnishe .img {
+  width: 150px;
+  height: 150px;
+}
+
+.garnishe-list {
+  width: 100%;
+  max-width: 600px;
+}
+
+.garnishe-list-items {
+  max-height: 500px;
+  overflow: auto;
+  padding: 0 var(--space-2) var(--space-9);
+
+  mask-image: linear-gradient(to bottom, white 1%, transparent 1%);
+  -webkit-mask-image: linear-gradient(to bottom, white 1%, transparent);
+}
+
+.garnishe-list-buttons {
+  position: absolute;
+  bottom: var(--space-5);
+  left: 0;
+  right: 0;
+}
+
+.garnishe-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: fill;
+  border-radius: var(--space-2);
+}

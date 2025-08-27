@@ -1,0 +1,68 @@
+{
+  "startPage": {
+    "documentNumber": "Nº do documento",
+    "register": "Cadastra-se",
+    "dontIdentify": "Não se identificar",
+    "invalidDocument": "Número do documento inválido!",
+    "yes": "Sim",
+    "no": "Não"
+  },
+  "menuPage": {
+    "choose": "Montar",
+    "order": "Pedido",
+    "menu": "Cardápio",
+    "category": "Categoria",
+    "sortBy": "Ordenar por",
+    "sort": {
+      "name": "Nome",
+      "price": "Preço",
+      "popular": "Popular"
+    },
+    "search": "Buscar produtos",
+    "myOrder": "Meu Pedido",
+    "payment": "Pagamento",
+    "addToCart": "Adicionar ao carrinho",
+    "thankYou": "Obrigado"
+  },
+  "checkoutPage": {
+    "title": "Como você gostaria de pagar?",
+    "orderSummary": "Resumo do Pedido",
+    "subtotal": "Subtotal",
+    "taxes": "Taxas",
+    "discount": "Desconto",
+    "pay": "Pagar",
+    "cancel": "Cancelar pagamento",
+    "mercadoPago": "Mercado Pago",
+    "mercadoPagoInstructions": "Use sua conta do Mercado Pago para pagar.",
+    "pix": "Pix",
+    "pixInstructions": "Use sua carteira para escanear o código QR e pagar com Pix.",
+    "creditCard": "Cartão de Crédito",
+    "creditCardInstructions": "Insira os dados do cartão de crédito para concluir o pagamento."
+  },
+  "confirmationPage": {
+    "title": "Obrigado pelo seu pedido!",
+    "subtitle": "Estamos preparando seu pedido, por favor, pegue seu recibo.",
+    "yourOrder": "Seu Pedido",
+    "orderNumber": "Nº"
+  },
+  "labels": {
+    "currency": "R$",
+    "name": "Nome",
+    "price": "Preço",
+    "quantity": "Quantidade",
+    "total": "Total",
+    "remove": "Remover",
+    "add": "Adicionar",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "finish": "Finalizar",
+    "customize": "Personalizar",
+    "apply": "Aplicar",
+    "done": "Concluir",
+    "ok": "OK",
+    "close": "Fechar"
+  }
+}

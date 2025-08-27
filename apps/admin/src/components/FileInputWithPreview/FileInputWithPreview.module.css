@@ -1,0 +1,30 @@
+.root {
+  height: 100vh;
+}
+
+.nav {
+  padding: var(--space-3);
+}
+
+.nav .logo {
+  padding: var(--space-5);
+  cursor: pointer;
+}
+
+.header {
+  margin-bottom: var(--space-5);
+}
+
+.header-controls svg {
+  height: 20px;
+  width: 20px;
+}
+
+.main {
+  padding: var(--space-6) var(--space-5);
+  background-color: var(--gray-a3);
+}
+
+.content {
+  padding: var(--space-1) 0;
+}

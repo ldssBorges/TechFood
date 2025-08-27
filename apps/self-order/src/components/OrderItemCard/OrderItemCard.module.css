@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--gray-a5);
+}
+
+.root img {
+  height: 50px;
+  width: 50px;
+  padding: var(--space-1);
+  background-color: var(--white-a10);
+}

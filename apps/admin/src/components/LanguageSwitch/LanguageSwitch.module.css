@@ -1,0 +1,44 @@
+.root {
+  position: relative;
+}
+
+.root img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-circular);
+}
+
+.button {
+  height: 40px;
+  width: 40px;
+  padding: var(--spacing-s);
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-4);
+  padding: var(--spacing-m) var(--spacing-none);
+}
+
+.option {
+  cursor: pointer;
+  white-space: nowrap;
+  padding: var(--spacing-mnudge) var(--spacing-xl);
+}
+
+.option:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.option img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: var(--border-radius-circular);
+  margin-right: var(--spacing-xxl);
+}

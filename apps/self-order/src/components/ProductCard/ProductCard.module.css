@@ -1,0 +1,29 @@
+.root {
+  width: 100%;
+  max-width: 250px;
+  padding: var(--space-4);
+  border: 1px solid var(--white-a10);
+  background-color: var(--white-a10);
+  border-radius: var(--radius-3);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.root:hover {
+  border-color: var(--accent-10);
+}
+
+.root img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: var(--radius-3);
+}
+
+.info {
+  margin-left: var(--space-2);
+}
+
+.price strong {
+  color: var(--amber-10);
+}

@@ -1,0 +1,50 @@
+{
+  "menuManagementPage": {
+    "products": "Produtos",
+    "categories": "Categorias",
+    "addProduct": "Adicionar Produtos",
+    "deleteDialog": {
+      "title": "Deletar Produto",
+      "message": "Você tem certeza que deseja deletar o produto {{name}}?",
+      "confirm": "Deletar",
+      "cancel": "Cancelar"
+    },
+    "editDialog": {
+      "addSuccessMessage": "Produto adicionado com sucesso",
+      "editSuccessMessage": "Produto editado com sucesso",
+      "addErrorMessage": "Falha ao adicionar produto",
+      "editErrorMessage": "Falha ao editar produto",
+      "editTitle": "Editar Produto",
+      "addTitle": "Adicionar Produto",
+      "selectCategory": "Selecionar Categoria"
+    }
+  },
+  "forbidden": {
+    "title": "Você não tem permissão para ver isso.",
+    "message": "A página que você está tentando acessar tem acesso restrito.",
+    "contactMessage": "Se você acha que isso é um erro, entre em contato com seu administrador.",
+    "backToHome": "Voltar para a Página Inicial"
+  },
+  "fileInput": {
+    "selectImage": "Selecionar Imagem",
+    "removeImage": "Remover Imagem",
+    "selectedImage": "Imagem Selecionada"
+  },
+  "labels": {
+    "save": "Salvar",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "name": "Nome",
+    "description": "Descrição",
+    "price": "Preço",
+    "category": "Categoria",
+    "image": "Imagem"
+  },
+  "errors": {
+    "expiredSession": "Sua sessão expirou. Por favor, faça login novamente.",
+    "unauthorizedAccess": "Você não tem permissão para acessar este recurso.",
+    "notFound": "O recurso solicitado não foi encontrado.",
+    "internalServerError": "Ocorreu um erro interno do servidor. Por favor, tente novamente mais tarde.",
+    "unexpectedError": "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde."
+  }
+}

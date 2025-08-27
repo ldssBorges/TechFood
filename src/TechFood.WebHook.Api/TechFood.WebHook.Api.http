@@ -1,0 +1,6 @@
+@TechFood.WebHook.Api_HostAddress = http://localhost:5221
+
+GET {{TechFood.WebHook.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

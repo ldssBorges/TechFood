@@ -1,0 +1,116 @@
+services:
+  techfood.nginx:
+    image: ${DOCKER_REGISTRY-}techfood.nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: techfood.nginx
+    ports:
+      - "5000:5000"
+    depends_on:
+      - techfood.admin
+      - techfood.self-order
+      - techfood.monitor
+      - techfood.api
+
+  techfood.admin:
+    image: ${DOCKER_REGISTRY-}techfood.admin
+    build:
+      context: .
+      dockerfile: apps/admin/Dockerfile
+    container_name: techfood.admin
+    depends_on:
+      techfood.api:
+        condition: service_healthy
+
+  techfood.self-order:
+    image: ${DOCKER_REGISTRY-}techfood.self-order
+    build:
+      context: .
+      dockerfile: apps/self-order/Dockerfile
+    container_name: techfood.self-order
+    depends_on:
+      techfood.api:
+        condition: service_healthy
+
+  techfood.monitor:
+    image: ${DOCKER_REGISTRY-}techfood.monitor
+    build:
+      context: .
+      dockerfile: apps/monitor/Dockerfile
+    container_name: techfood.monitor
+    depends_on:
+      techfood.api:
+        condition: service_healthy
+
+  techfood.api:
+    image: ${DOCKER_REGISTRY-}techfood.api
+    build:
+      context: .
+      dockerfile: src/TechFood.Api/Dockerfile
+    container_name: techfood.api
+    environment:
+      ASPNETCORE_HTTP_PORTS: 8080
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DataBaseConection: Server=techfood.db;Database=dbtechfood;User Id=sa;Password=123456#4EA;TrustServerCertificate=True;
+    ports:
+      - "49752:8080"
+    depends_on:
+      techfood.db:
+        condition: service_healthy
+    volumes:
+      - images_data:/app/images
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://localhost:8080/health",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  techfood.db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: techfood.db
+    ports:
+      - "1434:1433"
+    environment:
+      SA_PASSWORD: "123456#4EA"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "/opt/mssql-tools18/bin/sqlcmd",
+          "-S",
+          "localhost",
+          "-U",
+          "sa",
+          "-P",
+          "123456#4EA",
+          "-Q",
+          "SELECT 1",
+          "-C",
+          "-N",
+          "-b",
+          "-t",
+          "5",
+          "-v",
+          "TRUSTSERVERCERTIFICATE=yes",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  sqlserver_data:
+  images_data:

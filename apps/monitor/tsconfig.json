@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "removeComments": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["vite/client"]
+  },
+  "exclude": ["node_modules"]
+}

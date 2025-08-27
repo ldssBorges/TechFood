@@ -1,0 +1,10 @@
+.root {
+  height: 100vh;
+}
+
+.language-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5rem;
+}
